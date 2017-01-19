@@ -15,6 +15,6 @@ app.get('/', function(req, res){
 
 // This is telling the app to listen for port 3000,;PORT is important for when we deploy
 // 
-app.listen(process.env.PORT || 3000, function() {
-	console.log("listening on *3000");
+app.listen(process.env.PORT || 3001, function() {
+	console.log("listening on *3001");
 });

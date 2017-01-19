@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Some Title Goes Here</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
-		<h1>Hello World!!</h1>
+	<form>
+		<h1>Hello World!</h1>
+		<h3>Add a Friend</h3>
+			<!-- Name -->
+			<p>Name: <input type="text" id="name"></p>
+
+			<!-- Occupation -->
+			<p>Occupation: <input type="text" id="occupation"></p>
+
+			<!-- Age -->
+			<p>Age: <input type="text" id="age"></p>
+
+			<button id="add-friend">Add</button>
+			
+
+			<!-- GET friends -->
+			<h3>Friend</h3>
+			<ul id="friends">
+				
+			</ul>
+
+	</form>
 	</div>
 
-	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
 </body>
 </html>
