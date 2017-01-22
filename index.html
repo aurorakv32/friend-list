@@ -4,7 +4,7 @@
 	<title>Some Title Goes Here</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -12,28 +12,42 @@
 </head>
 <body>
 	<div class="container">
-	<form>
-		<h1>Hello World!</h1>
-		<h3>Add a Friend</h3>
+	
+		<h1 class="jumbotron" style="background-color: blue; color: white">Add yourself a friend!</h1>
+		
+		<h3><strong>Add a Friend</strong></h3>
+	<form class="form-group">
 			<!-- Name -->
-			<p>Name: <input type="text" id="name"></p>
+			<p class="col-md-3"><span class="glyphicon glyphicon-eye-open"></span>   Name: <input type="text" id="name" style="background-color: #ffffb3"></p>
 
 			<!-- Occupation -->
-			<p>Occupation: <input type="text" id="occupation"></p>
+			<p class="col-md-4"><span class="glyphicon glyphicon glyphicon-globe"></span>   Occupation: <input type="text" id="occupation" style="background-color: #ffffb3"></p>
 
 			<!-- Age -->
-			<p>Age: <input type="text" id="age"></p>
-
-			<button id="add-friend">Add</button>
+			<p class="col-md-3"><span class="glyphicon glyphicon glyphicon-fire"></span>   Age: <input type="text" id="age" style="background-color: #ffffb3"></p>
+			<!-- Submit -->
+			<button id="add-friend" type="submit" class="btn btn-primary">Submit</button>
 			
-
+	</form> 	
 			<!-- GET friends -->
-			<h3>Friend</h3>
-			<ul id="friends">
-				
-			</ul>
+			<h3>Your Friends</h3>
+		<div class="col-md-12">
+		<!-- Table to display friends list -->
+			<table id="friends" class="table table-striped">
+			<thead>
+				<tr>
+					<th>Name: </th>
+					<th>Occupation: </th>
+					<th>Age: </th>
+					<th>Remove</th>
+				</tr>
+			</thead>
+			<tbody>
 
-	</form>
+			</tbody>
+		</table>
+		</div>
+		
 	</div>
 
 
